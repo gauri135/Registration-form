@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="mailto:rokadegauri56@gmail.com" method="POST" enctype="multipart/form-data" aria-labelledby="form-title">
+        <h1 id="form-title">Registration Form</h1>
+        <!-- Full Name -->
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-help">
+            <small id="name-help">Enter your full name.</small>
+        </div>
+
+        <!-- Date of Birth -->
+        <div>
+            <label for="DOB">DOB:</label>
+            <input type="date" id="DOB" name="DOB" required aria-required="true">
+        </div>
+
+        <!-- Gender -->
+        <fieldset>
+            <legend>Gender:</legend>
+            <div class="gender-group">
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Email -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-help">
+            <small id="email-help">Enter a valid email address.</small>
+        </div>
+
+        <!-- State Selection -->
+        <div>
+            <label for="state">State:</label>
+            <select id="state" name="state" required aria-required="true">
+                <option value="">Select option</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Odisha">Odisha</option>
+            </select>
+        </div>
+
+        <!-- Password Fields -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required aria-required="true" aria-describedby="password-help">
+            <small id="password-help">Password must be at least 8 characters long.</small>
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required aria-required="true" aria-describedby="confirm-password-help">
+            <small id="confirm-password-help">Re-enter your password for confirmation.</small>
+        </div>
+
+        <!-- Color Picker -->
+        <div>
+            <label for="color">Which color is your favorite?</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <!-- Image Upload -->
+        <div>
+            <label for="image">Upload your image:</label>
+            <input type="file" id="image" name="image" accept="image/*" aria-label="Upload your image">
+        </div>
+
+        <!-- Submit and Reset Buttons -->
+        <div style="display: flex; justify-content: space-between;">
+            <input type="reset" id="reset" value="Reset">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>

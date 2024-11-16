@@ -1,0 +1,148 @@
+/* Basic reset to remove default margin, padding, and set box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Set font */
+    line-height: 1.6; /* Increase line-height for readability */
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Dark text color */
+    display: flex; /* Flexbox layout to center content */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+    padding: 1.25rem; /* Add padding around the body (20px) */
+}
+
+/* Form container styles */
+form {
+    background-color: white; /* White background for the form */
+    border-radius: 0.625rem; /* Rounded corners (10px) */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+    padding: 1.25rem; /* Padding inside the form (20px) */
+    max-width: 31.25rem; /* Limit the width of the form (500px) */
+    width: 100%; /* Make the form responsive */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 1.5rem; /* Set font size (24px) */
+    margin-bottom: 1.25rem; /* Space below the title (20px) */
+    text-align: center; /* Center align the title */
+}
+
+/* Style for form input fields and labels */
+div {
+    margin-bottom: 1rem; /* Space between form fields (15px) */
+}
+
+/* Label styles */
+label {
+    display: block; /* Make labels block-level elements */
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 0.3125rem; /* Space below the label (5px) */
+}
+
+/* Input and select field styles */
+input,
+select {
+    width: 100%; /* Make inputs and selects take full width */
+    padding: 0.625rem; /* Padding for the fields (10px) */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 0.3125rem; /* Rounded corners (5px) */
+    font-size: 0.875rem; /* Set font size (14px) */
+}
+
+/* Radio button adjustments */
+input[type="radio"] {
+    width: auto; /* Reset width to auto for radio button */
+    margin-left: 0.3125rem; /* Space to the left of radio buttons (5px) */
+    vertical-align: middle; /* Align vertically with text */
+    position: relative; /* Position relative for fine control */
+    top: 1.5rem; /* Adjust vertical alignment for the radio button */
+}
+
+/* Fieldset container styling */
+fieldset {
+    border: 1px solid #ccc; /* Border around fieldset */
+    border-radius: 0.3125rem; /* Rounded corners (5px) */
+    padding: 0.625rem; /* Padding inside fieldset (10px) */
+}
+
+/* Legend (title inside fieldset) styling */
+legend {
+    font-weight: bold; /* Bold title for legend */
+    margin-bottom: 0.625rem; /* Space below the legend (10px) */
+}
+
+/* Gender group styling for inline display */
+.gender-group {
+    display: inline-block; /* Display radio buttons inline */
+    margin-right: 1.25rem; /* Space between gender options (20px) */
+    margin-bottom: 0.625rem; /* Space below the gender group (10px) */
+}
+
+/* Adjust label for gender input */
+.gender-group label {
+    margin-left: 1.75rem; /* Space between label and radio button (20px) */
+}
+
+/* Small text styling for helper text */
+small {
+    display: block; /* Make the small text a block element */
+    font-size: 0.75rem; /* Small font size (12px) */
+    color: #666; /* Light grey color */
+}
+
+/* Button styling for submit and reset */
+input[type="submit"],
+input[type="reset"] {
+    width: 48%; /* Make buttons 48% width to fit on the same line */
+    padding: 0.625rem; /* Padding inside the buttons (10px) */
+    border: none; /* Remove border */
+    border-radius: 0.3125rem; /* Rounded corners (5px) */
+    font-size: 1rem; /* Font size for button text (16px) */
+    cursor: pointer; /* Change cursor to pointer when hovered */
+    color: white; /* White text on the buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Submit button style */
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+}
+
+/* Reset button style */
+input[type="reset"] {
+    background-color: #f44336; /* Red background */
+}
+
+/* Hover effects for the buttons */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+input[type="reset"]:hover {
+    background-color: #d73833; /* Darker red on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 37.5rem) { /* 600px equivalent */
+    form {
+        padding: 0.9375rem; /* Reduced padding on smaller screens (15px) */
+    }
+
+    input,
+    select {
+        font-size: 0.75rem; /* Smaller font size for smaller screens (12px) */
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 0.875rem; /* Smaller button font size for small screens (14px) */
+    }
+}
